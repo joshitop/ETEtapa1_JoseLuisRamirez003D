@@ -23,3 +23,9 @@ bootstrap.min.js.
 The file will have its original line endings in your working directory
 
 si tiene algún problema le mando el trabajo directamente
+
+path('',views.index,name='index'),
+    path('proveedores/',views.proveedores, name='proveedores'),
+    path('crear_proveedor/',views.crearProveedor, name='crearProveedor'),
+    path('modificar_proveedor/<id>',views.modificarProveedor, name='modificarProveedor'),
+    path('eliminar_proveedor/<id>',views.eliminarProveedor, name='eliminarProveedor')
